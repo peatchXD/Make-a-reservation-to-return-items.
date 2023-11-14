@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>จองคิวคืนของ</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>แบบฟอร์มจองคิวคืนของ</h1>
+    <form id="queueForm">
+        <label for="username">ชื่อผู้ใช้ดิส:</label>
+        <input type="text" id="username" name="UsernameDiscord" required><br><br>
+        
+        <label for="usernameG">ชื่อในเกม:</label>
+        <input type="text" id="usernameG" name="UserNamePlayer" required><br><br>
+        
+        <label for="profilePic">รูปของที่จะคืน:</label>
+        <input type="file" id="profilePic" name="profilePic"><br><br>
+        
+        <input type="submit" value="จองคิว">
+    </form>
+
+    <script src="script.js"></script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyACFXn6Rzk_j-ns-paWr-eP3OXVFrcFHfc",
+          authDomain: "reservation-to-return-items.firebaseapp.com",
+          projectId: "reservation-to-return-items",
+          storageBucket: "reservation-to-return-items.appspot.com",
+          messagingSenderId: "662816900",
+          appId: "1:662816900:web:49c4074b33f6de01119ad1",
+          measurementId: "G-WM3EX6MVRT"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+</body>
+</html>

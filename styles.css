@@ -1,0 +1,11 @@
+body {
+    background-color: #000;
+    color: #eb8c4a;
+    font-family: Arial;
+    font-size: 24px;
+    text-align: center;
+}
+
+form {
+    width: 300px;
+}
